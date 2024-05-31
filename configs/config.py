@@ -1,0 +1,3 @@
+SPECIFICATIONS_FILE="configs/spec_purchase_history_data.json"
+INPUT_FILE_PATH="input/spec_purchase_history_data.txt"
+OUTPUT_FILE_PATH="output/spec_purchase_history_output.csv"

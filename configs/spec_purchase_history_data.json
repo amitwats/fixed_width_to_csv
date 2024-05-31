@@ -1,0 +1,25 @@
+{
+    "ColumnNames": [
+        "Name",
+        "id",
+        "address",
+        "data_of_birth",
+        "phone_number",
+        "gender",
+        "amount",
+        "transaction_date"
+    ],
+    "Offsets": [
+        20,
+        12,
+        80,
+        11,
+        30,
+        15,
+        8,
+        11
+    ],
+    "FixedWidthEncoding": "windows-1252",
+    "IncludeHeader": "True",
+    "DelimitedEncoding": "utf-8"
+}
