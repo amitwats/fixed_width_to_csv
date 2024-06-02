@@ -13,7 +13,7 @@ The objective of this project is to build a parser that reads from a **fixed wid
     - [Philosophy](#philosophy)
     - [Files and Folders](#files-and-folders)
   - [Running the application](#running-the-application)
-    - [Prerequisite](#prerequisits)
+    - [Prerequisits](#prerequisits)
     - [Run the code](#run-the-code)
     - [Checking the output](#checking-the-output)
   - [Running the Tests](#running-the-tests)
@@ -78,6 +78,7 @@ The following are in prerequisites
    │ └── fw_2_csv_parser.py
    ├── tests/
    │ ├── data/
+   │ │ └── data_generator.py
    │ ├── integration_tests/
    │ └── unit_tests/
    ├── .gitignore
@@ -94,6 +95,7 @@ The code structure is designed to be extendable to become the base of a larger p
 * **main.py** : This is the starting point of where the code executes
 * **parser/fw_2_csv_parser.py** : The core of the parser logic is written in this file. The method `parse_fw_to_csv` is the main parser method. The method `from_json` creates a parser object that is based on the specs specified in a *json* file
 * **configs/config.py** : This holds configuration values like the specifications of the input data, the location of the input file and the path of the output file. By convention the locations should be in their respective folders. Technically putting the values to any valid folder path would work.
+* **data/data_generator.py** : This file is used to generate data.
 * **configs** : This folder holds all configurations including the configuration of the input file in json format *specs.json*
 * **input** : All input data file is placed here. 
 * **output** : All output data file is received here. 
