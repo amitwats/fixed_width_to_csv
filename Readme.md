@@ -31,7 +31,7 @@ The objective of this project is to build a parser that reads from a **fixed wid
 
 The following are in prerequisites
 * Python (v 11 and above) is installed
-* PYTHONHOME is configured to point to current folder
+* PYTHONPATH is configured to point to current folder
 
 ### Windows
 1. Clone the repository:<br>
