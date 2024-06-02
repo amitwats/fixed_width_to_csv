@@ -20,6 +20,11 @@ The objective of this project is to build a parser that reads from a **fixed wid
     - [Runnint All Tests](#runnint-all-tests)
     - [Runnint Unit Tests](#runnint-unit-tests)
     - [Running Integration Tests](#running-integration-tests)
+  - [Running in Docker](#running-in-docker)
+    - [Prerequisits](#prerequisits-2)
+    - [Build the container](#build-the-container)
+    - [Starting the image](#starting-the-image)
+    - [Running the applications and tests](#running-the-applications-and-tests)
 
 ## Installation
 
@@ -73,6 +78,8 @@ The following are in prerequisites
    │ └── unit_tests/
    ├── .gitignore
    ├── main.py
+   ├── .dockerignore
+   ├── Dockerfile
    ├── README.md
    └── requirements.txt
    ```
@@ -87,6 +94,8 @@ The code structure is designed to be extendable to become the base of a larger p
 * **output** : All output data file is recieved here. 
 * **parser** : The folder to hold all parsers. For the this project there is only one parser in it.
 * **tests** : The placeholder for all testing related artifacts and code. This has data generators in ***data*** folder, unit tests in the  ***unit_tests*** folder, and all integration tests in the ***integration_tests*** folder.
+* **Dockerfile** : The docker file used to run the application in a docker container.
+* **.dockerignore** : The standard docker ignore file to ignore copying certain artifats to the docker container.
 * **requirements.txt** : The list of python requirements
 * **.gitignore** : All files to be ignored by git.
 
@@ -166,6 +175,27 @@ You can find output file as per the cofiguration in the ***configs/config.py*** 
    pytest ./tests/integration_tests
 ```
 
+
+## Running in Docker
+
+### Prerequisits
+* Docker should be installed on the system
+  
+### Build the container
+
+```bash
+docker build -t fw_app .
+```
+  
+### Starting the image
+
+```bash
+docker run -it fw_app  /bin/bash
+```
+This will start the bash of the docker image
+  
+### Running the applications and tests
+In the bash use the same commands as those under MacOs/Linux sections to run the application and tests.
 
 
 

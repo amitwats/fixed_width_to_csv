@@ -162,7 +162,8 @@ class DataSpecGivenData(DataSpec):
 
 if __name__=="__main__":
     # DataSpecPurchaseHistory.generate_data_file("input/spec_purchase_history_data.txt", 50)
-    DataSpecPurchaseHistory.generate_data_file("C:\\AmitFiles\\tryStuff\\latitude_financials_coding_challenge\\coding-challenges\\coding-challenges\\P2_fixed_width\\input\\spec_purchase_history_data.txt", 50)
+    # DataSpecPurchaseHistory.generate_data_file("C:\\AmitFiles\\tryStuff\\latitude_financials_coding_challenge\\coding-challenges\\coding-challenges\\P2_fixed_width\\input\\spec_purchase_history_data.txt", 50)
     # print(DataSpecGivenData.generate_row_data())
     # DataSpecGivenData.generate_data_file(r".\\a.txt",5)
+    pass
 
