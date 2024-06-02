@@ -91,7 +91,8 @@ The following are in prerequisites
 The code structure is designed to be extendable to become the base of a larger project. The code is written to be scalable for large input files.
 
 ### Files and Folders
-* **main.py** :This is the starting point of where the code executes
+* **main.py** : This is the starting point of where the code executes
+* **parser/fw_2_csv_parser.py** : The core of the parser logic is written in this file. The method `parse_fw_to_csv` is the main parser method. The method `from_json` creates a parser object that is based on the specs specified in a *json* file
 * **configs/config.py** : This holds configuration values like the specifications of the input data, the location of the input file and the path of the output file. By convention the locations should be in their respective folders. Technically putting the values to any valud folder path would work.
 * **configs** : This folder holds all configurations including the configuration of the input file in json format *specs.json*
 * **input** : All input data file is placed here. 
