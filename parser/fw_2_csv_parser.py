@@ -70,6 +70,7 @@ class FW2CSVParser:
                     writer.writerow(self.column_names)
                 line = input_file.readline()
                 while line:
+                    line=line.strip('\n')
                     csv_row=self.convert_row_to_fields(line)
                     writer.writerow(csv_row)
                     line = input_file.readline()
@@ -110,7 +111,7 @@ class FW2CSVParser:
             List[str]: Extracts the field values from a fixed width row. Returns a list of field values.
         """
         if len(row_str)!=self.get_row_length():
-            raise ValueError(f"The length of the row should be {self.get_row_length()} instead it is {len(row_str)}")
+            raise ValueError(f"The length of the row should be {self.get_row_length()} instead it is {len(row_str)}, -{row_str}-")
         last_index=0
         data_list=[]
         for column_name in self.column_names:
