@@ -8,6 +8,7 @@ The objective of this project is to build a parser that reads from a **fixed wid
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
     - [Windows](#windows)
+    - [Linux and MacOS](#linux-and-macos)
   - [Code Structure](#code-structure)
     - [Philosophy](#philosophy)
     - [Files and Folders](#files-and-folders)
@@ -17,7 +18,7 @@ The objective of this project is to build a parser that reads from a **fixed wid
     - [Checking the output](#checking-the-output)
   - [Running the Tests](#running-the-tests)
     - [Prerequisits](#prerequisits-1)
-    - [Runnint All Tests](#runnint-all-tests)
+    - [Running All Tests](#running-all-tests)
     - [Runnint Unit Tests](#runnint-unit-tests)
     - [Running Integration Tests](#running-integration-tests)
   - [Running in Docker](#running-in-docker)
@@ -37,14 +38,17 @@ The following are in prerequisites
    Go to the base folder where you need to project installed
    ```bash
    git clone https://github.com/amitwats/fixed_width_to_csv.git
+   ```
 2. Switch to the project directory:
    ```bash
    cd fixed_width_to_csv
+   ```
 3. Create a virtual environment, activate it and install requirements into it:
    ```bash
    python -m venv venv
    venv\Scripts\activate
    py -m pip install -r requirements.txt
+   ```
 ### Linux and MacOS
 1. Clone the repository:<br>
    Go to the base folder where you need to project installed
@@ -141,7 +145,7 @@ You can find output file as per the cofiguration in the ***configs/config.py*** 
 ### Prerequisits
 * Activate the venv environment as described in the installation section.
 
-### Runnint All Tests
+### Running All Tests
 
 **Windows**
 ```bash
